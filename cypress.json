@@ -1,0 +1,12 @@
+{
+    "baseUrl":"https://www.saucedemo.com",
+    "video": true,
+    "screenshot":true,
+    "chromeWebSecurity": false,
+
+    "reporterOptions": {
+        "overwrite": true,
+        "html": true,
+        "json": false
+    }
+}
