@@ -23,10 +23,11 @@ steps:
     To: 'ankit.kumar@infostride.com'
     CC: 'saurav.sharma@infostride.com'
     From: 'ithubchandigarh@gmail.com'
-    Subject: 
+    Subject: 'pipleine'
     Body: 'Hi, Your Build is successful.'
     BodyAsHtml: false
     AddAttachment: false
     SmtpServer: 'smtp.gmail.com'
+    SmtpPort: '465'
     SmtpUsername: 'ithubchandigarh@gmail.com'
     SmtpPassword: 'aveqavpvynpsirhi'
