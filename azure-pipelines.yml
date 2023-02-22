@@ -31,4 +31,4 @@ steps:
     SmtpPort: '587'
     SmtpUsername: 'ithubchandigarh@gmail.com'
     SmtpPassword: 'aveqavpvynpsirhi'
-    Attachment: 'C:\Users\AnkitKumar\CypressProjects\Cypress9.7.0 version\allure-report\index.html'
+    Attachment: '$(System.DefaultWorkingDirectory/Cypress9.7.0-version-/allure-report/index.html)'
