@@ -18,15 +18,26 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: SendEmail@1
+# - task: SendEmail@1
+#   inputs:
+#     To: 'ankit.kumar@infostride.com'
+#     CC: 'saurav.sharma@infostride.com'
+#     From: 'ithubchandigarh@gmail.com'
+#     Subject: 'pipleine'
+#     Body: 'Hi, Your Build is successful.'
+#     BodyAsHtml: false
+#     AddAttachment: false
+#     SmtpServer: 'smtp.gmail.com'
+#     SmtpPort: '465'
+#     SmtpUsername: 'ithubchandigarh@gmail.com'
+#     SmtpPassword: 'aveqavpvynpsirhi'
+
+- task: SendEmail@0
   inputs:
     To: 'ankit.kumar@infostride.com'
-    CC: 'saurav.sharma@infostride.com'
     From: 'ithubchandigarh@gmail.com'
-    Subject: 'pipleine'
-    Body: 'Hi, Your Build is successful.'
-    BodyAsHtml: false
-    AddAttachment: false
+    Subject: 'pipeline'
+    Body: 'passed'
     SmtpServer: 'smtp.gmail.com'
     SmtpPort: '465'
     SmtpUsername: 'ithubchandigarh@gmail.com'
