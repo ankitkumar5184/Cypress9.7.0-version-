@@ -31,4 +31,4 @@ steps:
     SmtpPort: '587'
     SmtpUsername: 'ithubchandigarh@gmail.com'
     SmtpPassword: 'aveqavpvynpsirhi'
-    Attachment: '$(Pipeline.Workspace)/allure-report/index.html'
+    Attachment: '$(Pipeline.Workspace)'
