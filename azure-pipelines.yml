@@ -42,3 +42,4 @@ steps:
     SmtpPort: '465'
     SmtpUsername: 'ithubchandigarh@gmail.com'
     SmtpPassword: 'aveqavpvynpsirhi'
+    UseSSL: false
