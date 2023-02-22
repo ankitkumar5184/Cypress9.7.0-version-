@@ -28,7 +28,7 @@ steps:
     BodyAsHtml: false
     AddAttachment: true
     SmtpServer: 'smtp.gmail.com'
-    SmtpPort: '587'
+    SmtpPort: '465'
     SmtpUsername: 'ithubchandigarh@gmail.com'
     SmtpPassword: 'odashaazidruvchd'
     Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
