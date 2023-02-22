@@ -31,4 +31,4 @@ steps:
     SmtpPort: '587'
     SmtpUsername: 'ithubchandigarh@gmail.com'
     SmtpPassword: 'aveqavpvynpsirhi'
-    Attachment: package.json
+    Attachment: 'package.json'
