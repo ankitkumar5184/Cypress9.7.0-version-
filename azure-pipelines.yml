@@ -1,13 +1,4 @@
 # Starter pipeline
-- task: SendEmail@1
-  inputs:
-    To: 'ankit.kumar@infostride.com'
-    CC: 'saurav.sharma@infostride.com'
-    From: 'ithubchandigarh@gmail.com'
-    Subject: 'testing'
-    BodyAsHtml: false
-    AddAttachment: true
-    SmtpServer: 'smtp.hamil.com'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -26,3 +17,13 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- task: SendEmail@1
+  inputs:
+    To: 'ankit.kumar@infostride.com'
+    CC: 'saurav.sharma@infostride.com'
+    From: 'ithubchandigarh@gmail.com'
+    Subject: 'testing'
+    BodyAsHtml: false
+    AddAttachment: true
+    SmtpServer: 'smtp.hamil.com'
