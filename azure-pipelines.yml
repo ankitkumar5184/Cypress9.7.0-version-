@@ -26,8 +26,9 @@ steps:
     Subject: 'pipleine'
     Body: 'Hi, Your Build is successful.'
     BodyAsHtml: false
-    AddAttachment: false
+    AddAttachment: true
     SmtpServer: 'smtp.gmail.com'
     SmtpPort: '587'
     SmtpUsername: 'ithubchandigarh@gmail.com'
-    SmtpPassword: 'aveqavpvynpsirhi'
+    SmtpPassword: 'odashaazidruvchd'
+    Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
