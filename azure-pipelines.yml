@@ -18,10 +18,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: TerraformInstaller@1
-  inputs:
-    terraformVersion: 'latest'
-
 - task: SendEmail@1
   inputs:
     To: 'ankit.kumar@infostride.com'
@@ -30,9 +26,9 @@ steps:
     Subject: 'pipleine'
     Body: 'Hi, Your Build is successful.'
     BodyAsHtml: false
-    AddAttachment: false
+    AddAttachment: true
     SmtpServer: 'smtp.gmail.com'
     SmtpPort: '587'
     SmtpUsername: 'ithubchandigarh@gmail.com'
     SmtpPassword: 'aveqavpvynpsirhi'
-    Attachment: ./allure-report/index.html
+    Attachment: Cypress9.7.0-version-/allure-report/index.html
