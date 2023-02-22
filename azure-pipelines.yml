@@ -23,7 +23,10 @@ steps:
     To: 'ankit.kumar@infostride.com'
     CC: 'saurav.sharma@infostride.com'
     From: 'ithubchandigarh@gmail.com'
-    Subject: 'testing'
+    Subject: 
+    Body: 'Hi, Your Build is successful.'
     BodyAsHtml: false
-    AddAttachment: true
-    SmtpServer: 'smtp.hamil.com'
+    AddAttachment: false
+    SmtpServer: 'smtp.gmail.com'
+    SmtpUsername: 'ithubchandigarh@gmail.com'
+    SmtpPassword: 'aveqavpvynpsirhi'
