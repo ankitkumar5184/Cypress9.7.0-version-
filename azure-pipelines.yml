@@ -31,4 +31,4 @@ steps:
     SmtpPort: '587'
     SmtpUsername: 'ithubchandigarh@gmail.com'
     SmtpPassword: 'aveqavpvynpsirhi'
-    Attachment: /allure-report/index.html
+    Attachment: Cypress9.7.0 version/allure-report/index.html
