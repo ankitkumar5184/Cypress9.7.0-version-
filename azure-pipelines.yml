@@ -31,4 +31,3 @@ steps:
     SmtpPort: '587'
     SmtpUsername: 'ithubchandigarh@gmail.com'
     SmtpPassword: 'aveqavpvynpsirhi'
-    Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
