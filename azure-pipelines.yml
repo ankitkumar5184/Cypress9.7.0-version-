@@ -10,7 +10,7 @@ pool:
   vmImage: windows-latest
 
 steps:
-- script: echo Hello, world!
+- script: runnig
   displayName: 'Run a one-line script'
 
 - task: SendEmail@1
