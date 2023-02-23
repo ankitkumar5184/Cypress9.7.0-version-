@@ -25,4 +25,4 @@ steps:
     Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
     SmtpServer: 'smtp.office365.com'
     SmtpUsername: 'ankit.kumar@infostride.com'
-    SmtpPassword: 'INFO7184@Ak659'
+    SmtpPassword: 'INFO7184@Ak'
