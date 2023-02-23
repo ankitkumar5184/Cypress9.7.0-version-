@@ -31,4 +31,4 @@ steps:
     Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
     SmtpServer: 'smtp.gmail.com'
     SmtpUsername: 'rockstar71581@gmail.com'
-    SmtpPassword: 'Ankit@5184'
+    SmtpPassword: 'fheuglnspwxwgacq'
