@@ -22,13 +22,13 @@ steps:
   inputs:
     To: 'ankit.kumar@infostride.com'
     CC: 'saurav.sharma@infostride.com'
-    From: 'ithubchandigarh@gmail.com'
+    From: 'rockstar71581@gmail.com'
     Subject: 'pipleine'
     Body: 'Hi, Your Build is successful.'
     BodyAsHtml: false
     AddAttachment: true
     SmtpServer: 'smtp.gmail.com'
     SmtpPort: '587'
-    SmtpUsername: 'ithubchandigarh@gmail.com'
-    SmtpPassword: 'fwfuyadpdmniozdt'
+    SmtpUsername: 'rockstar71581@gmail.com'
+    SmtpPassword: 'Ankit@5184'
     Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
