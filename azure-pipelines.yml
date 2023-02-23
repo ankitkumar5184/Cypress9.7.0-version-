@@ -22,7 +22,7 @@ steps:
     Body: 'Hi, Your Build is successful.'
     BodyAsHtml: false
     AddAttachment: true
-    Attachment: '$(System.DefaultWorkingDirectory)/allure-report/history/**/-*.html'
+    Attachment: '$(System.DefaultWorkingDirectory)/allure-report/history/-*.json'
     SmtpServer: 'smtp.office365.com'
     SmtpUsername: 'ankit.kumar@infostride.com'
     SmtpPassword: 'INFO7184@Ak'
