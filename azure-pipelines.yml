@@ -18,6 +18,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+
 - task: SendEmail@1
   inputs:
     To: 'ankit.kumar@infostride.com'
@@ -27,8 +28,7 @@ steps:
     Body: 'Hi, Your Build is successful.'
     BodyAsHtml: false
     AddAttachment: true
+    Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
     SmtpServer: 'smtp.gmail.com'
-    SmtpPort: '587'
     SmtpUsername: 'rockstar71581@gmail.com'
     SmtpPassword: 'Ankit@5184'
-    Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
