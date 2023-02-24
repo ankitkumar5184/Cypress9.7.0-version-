@@ -16,13 +16,13 @@ steps:
 - task: SendEmail@1
   inputs:
     To: 'ankit.kumar@infostride.com'
-    CC: 'saurav.sharma@infostride.com'
+    CC: 'saurav.sharma@infostride.com,aayush.khandelwal@infostride.com'
     From: 'ankit.kumar@infostride.com'
     Subject: 'pipleine'
     Body: 'Hi, Your Build is successful.'
     BodyAsHtml: false
     AddAttachment: true
-    Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
+    Attachment: '$(System.DefaultWorkingDirectory)/videos/Test Cases/AddtoCartPage.spec.js.mp4'
     SmtpServer: 'smtp.office365.com'
     SmtpUsername: 'ankit.kumar@infostride.com'
     SmtpPassword: 'INFO7184@Ak'
