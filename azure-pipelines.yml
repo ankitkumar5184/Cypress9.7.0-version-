@@ -13,17 +13,17 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: SendEmail@1
-  inputs:
-    To: 'ankit.kumar@infostride.com'
-    CC: 'saurav.sharma@infostride.com'
-    BCC: 'aayush.khandelwal@infostride.com'
-    From: 'ankit.kumar@infostride.com'
-    Subject: 'pipleine'
-    Body: 'Hi, Your Build is successful.'
-    BodyAsHtml: false
-    AddAttachment: true
-    Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
-    SmtpServer: 'smtp.office365.com'
-    SmtpUsername: 'ankit.kumar@infostride.com'
-    SmtpPassword: 'INFO7184@Ak'
+# - task: SendEmail@1
+#   inputs:
+#     To: 'ankit.kumar@infostride.com'
+#     CC: 'saurav.sharma@infostride.com'
+#     BCC: 'aayush.khandelwal@infostride.com'
+#     From: 'ankit.kumar@infostride.com'
+#     Subject: 'pipleine'
+#     Body: 'Hi, Your Build is successful.'
+#     BodyAsHtml: false
+#     AddAttachment: true
+#     Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
+#     SmtpServer: 'smtp.office365.com'
+#     SmtpUsername: 'ankit.kumar@infostride.com'
+#     SmtpPassword: 'INFO7184@Ak'
