@@ -45,9 +45,9 @@ steps:
 #     smtpConnectionEndpoint: 'INFOSMTP'
 
 # - task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: "Send-MailMessage -To 'ankit.kumar@infostride.com' -From 'ankitkumar5184@outlook.com' -Subject 'Report' -SmtpServer 'smtp.office365.com' -Attachment '$(System.DefaultWorkingDirectory)/allure-report/index.html'"
+  # inputs:
+    # targetType: 'inline'
+    # script: "Send-MailMessage -To 'ankit.kumar@infostride.com' -From 'ankitkumar5184@outlook.com' -Subject 'Report' -SmtpServer 'smtp.office365.com' -Attachment '$(System.DefaultWorkingDirectory)/allure-report/index.html'"
 
 
 - task: EmailReport@1
