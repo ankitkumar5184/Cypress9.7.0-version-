@@ -27,3 +27,18 @@ steps:
 #     SmtpServer: 'smtp.office365.com'
 #     SmtpUsername: 'ankit.kumar@infostride.com'
 #     SmtpPassword: 'INFO7184@Ak'
+
+- task: EmailReport@1
+  inputs:
+    sendMailConditionConfig: 'Always'
+    subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
+    includeInToSectionStr: '1'
+    toAddress: 'ankit.kumar@infostride.com'
+    includeInCcSectionStr: '1'
+    ccAddress: 'saurav.sharma@infostride.com'
+    defaultDomain: 'microsoft.com'
+    groupTestResultsBy: 'run'
+    includeCommits: true
+    maxTestFailuresToShow: '15'
+    includeOthersInTotal: true
+    usePreviousEnvironment: false
