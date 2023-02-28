@@ -31,19 +31,19 @@ steps:
 
 - task: EmailReport@1
   inputs:
-    sendMailConditionConfig: 'On Success'
+    sendMailConditionConfig: 'Always'
     subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
     toAddress: 'aayush.khandelwal@infostride.com'
     includeInCcSectionStr: '1'
     ccAddress: 'saurav.sharma@infostride.com'
     defaultDomain: 'microsoft.com'
-    includeResultsStr: '2'
     groupTestResultsBy: 'run'
     includeCommits: true
     maxTestFailuresToShow: '15'
-    includeOthersInTotal: true
+    includeOthersInTotal: false
     usePreviousEnvironment: false
     enableTLS: true
+    smtpConnectionEndpoint: 'InfostrideSMTP'
 
 
 # - task: EmailReport@1
