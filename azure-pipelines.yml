@@ -13,21 +13,21 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: EmailReport@1
-  inputs:
-    sendMailConditionConfig: 'Always'
-    subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
-    includeInToSectionStr: '1'
-    toAddress: 'aayush.khandelwal@infostride.com'
-    includeInCcSectionStr: '1'
-    ccAddress: 'saurav.sharma@infostride.com'
-    defaultDomain: 'microsoft.com'
-    groupTestResultsBy: 'run'
-    includeCommits: true
-    maxTestFailuresToShow: '15'
-    includeOthersInTotal: true
-    usePreviousEnvironment: false
-    smtpConnectionEndpoint: '465'
+# - task: EmailReport@1
+#   inputs:
+#     sendMailConditionConfig: 'Always'
+#     subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
+#     includeInToSectionStr: '1'
+#     toAddress: 'aayush.khandelwal@infostride.com'
+#     includeInCcSectionStr: '1'
+#     ccAddress: 'saurav.sharma@infostride.com'
+#     defaultDomain: 'microsoft.com'
+#     groupTestResultsBy: 'run'
+#     includeCommits: true
+#     maxTestFailuresToShow: '15'
+#     includeOthersInTotal: true
+#     usePreviousEnvironment: false
+#     smtpConnectionEndpoint: '465'
 
 - task: EmailReport@1
   inputs:
@@ -43,8 +43,24 @@ steps:
     maxTestFailuresToShow: '15'
     includeOthersInTotal: true
     usePreviousEnvironment: false
+    enableTLS: true
     smtpConnectionEndpoint: '465'
 
+
+# - task: EmailReport@1
+#   inputs:
+#     sendMailConditionConfig: 'Always'
+#     subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
+#     toAddress: 'aayush.khandelwal@infostride.com'
+#     includeInCcSectionStr: '1'
+#     ccAddress: 'saurav.sharma@infostride.com'
+#     defaultDomain: 'microsoft.com'
+#     groupTestResultsBy: 'run'
+#     includeCommits: true
+#     maxTestFailuresToShow: '15'
+#     includeOthersInTotal: false
+#     usePreviousEnvironment: false
+#     enableTLS: true
 
 # - task: SendEmail@1
 #   inputs:
