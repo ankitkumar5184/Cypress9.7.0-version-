@@ -44,6 +44,18 @@ steps:
     usePreviousEnvironment: false
     smtpConnectionEndpoint: 'INFOSMTP'
 
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      Send-MailMessage -From 'ankitkumar5184@outlook.com' 
+      -To 'ankit.kumar@infostride.com', 'gulshan.kumar@infostride.com' 
+      -Subject 'Sending the Attachment' 
+      -Body "Forgot to send the attachment. Sending now." ./allure-report/index.html
+      -Priority High 
+      -DeliveryNotificationOption OnSuccess,OnFailure 
+      -SmtpServer 'smtp.office365.com'
+
 
 # - task: EmailReport@1
 #   inputs:
