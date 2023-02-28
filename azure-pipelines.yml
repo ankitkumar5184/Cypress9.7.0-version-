@@ -27,6 +27,7 @@ steps:
     maxTestFailuresToShow: '15'
     includeOthersInTotal: true
     usePreviousEnvironment: false
+    smtpConnectionEndpoint: '2465'
 
 - task: EmailReport@1
   inputs:
@@ -42,6 +43,7 @@ steps:
     maxTestFailuresToShow: '15'
     includeOthersInTotal: true
     usePreviousEnvironment: false
+    smtpConnectionEndpoint: '465'
 
 
 # - task: SendEmail@1
