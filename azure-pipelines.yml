@@ -13,21 +13,6 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-# - task: SendEmail@1
-#   inputs:
-#     To: 'ankit.kumar@infostride.com'
-#     CC: 'saurav.sharma@infostride.com'
-#     BCC: 'aayush.khandelwal@infostride.com'
-#     From: 'ankit.kumar@infostride.com'
-#     Subject: 'pipleine'
-#     Body: 'Hi, Your Build is successful.'
-#     BodyAsHtml: false
-#     AddAttachment: true
-#     Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
-#     SmtpServer: 'smtp.office365.com'
-#     SmtpUsername: 'ankit.kumar@infostride.com'
-#     SmtpPassword: 'INFO7184@Ak'
-
 - task: EmailReport@1
   inputs:
     sendMailConditionConfig: 'Always'
@@ -42,3 +27,34 @@ steps:
     maxTestFailuresToShow: '15'
     includeOthersInTotal: true
     usePreviousEnvironment: false
+
+- task: EmailReport@1
+  inputs:
+    sendMailConditionConfig: 'On Success'
+    subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
+    toAddress: 'ankit.kumar@infostride.com'
+    includeInCcSectionStr: '1'
+    ccAddress: 'saurav.sharma@infostride.com'
+    defaultDomain: 'microsoft.com'
+    includeResultsStr: '2'
+    groupTestResultsBy: 'run'
+    includeCommits: true
+    maxTestFailuresToShow: '15'
+    includeOthersInTotal: true
+    usePreviousEnvironment: false
+
+
+# - task: SendEmail@1
+#   inputs:
+#     To: 'ankit.kumar@infostride.com'
+#     CC: 'saurav.sharma@infostride.com'
+#     BCC: 'aayush.khandelwal@infostride.com'
+#     From: 'ankit.kumar@infostride.com'
+#     Subject: 'pipleine'
+#     Body: 'Hi, Your Build is successful.'
+#     BodyAsHtml: false
+#     AddAttachment: true
+#     Attachment: '$(System.DefaultWorkingDirectory)/allure-report/index.html'
+#     SmtpServer: 'smtp.office365.com'
+#     SmtpUsername: 'ankit.kumar@infostride.com'
+#     SmtpPassword: 'INFO7184@Ak'
