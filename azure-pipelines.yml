@@ -33,7 +33,7 @@ steps:
   inputs:
     sendMailConditionConfig: 'Always'
     subject: '[{environmentStatus}] {passPercentage} tests passed in $(Release.EnvironmentName) stage for $(Build.BuildNumber)'
-    toAddress: 'aayush.khandelwal@infostride.com'
+    toAddress: 'ankit.kumar@infostride.com'
     includeInCcSectionStr: '1'
     ccAddress: 'saurav.sharma@infostride.com'
     defaultDomain: 'microsoft.com'
@@ -42,7 +42,6 @@ steps:
     maxTestFailuresToShow: '15'
     includeOthersInTotal: false
     usePreviousEnvironment: false
-    enableTLS: true
     smtpConnectionEndpoint: 'InfostrideSMTP'
 
 
