@@ -40,9 +40,9 @@ steps:
     groupTestResultsBy: 'run'
     includeCommits: true
     maxTestFailuresToShow: '15'
-    includeOthersInTotal: false
+    includeOthersInTotal: true
     usePreviousEnvironment: false
-    smtpConnectionEndpoint: 'InfostrideSMTP'
+    smtpConnectionEndpoint: 'INFOSMTP'
 
 
 # - task: EmailReport@1
