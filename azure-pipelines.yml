@@ -44,7 +44,6 @@ steps:
     includeOthersInTotal: true
     usePreviousEnvironment: false
     enableTLS: true
-    smtpConnectionEndpoint: '465'
 
 
 # - task: EmailReport@1
