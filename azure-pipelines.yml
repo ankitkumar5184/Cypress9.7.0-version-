@@ -13,6 +13,9 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: printAllVariables@1
+  displayName: 'Print all variables'
+
 # - task: EmailReport@1
 #   inputs:
 #     sendMailConditionConfig: 'Always'
